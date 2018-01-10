@@ -9,7 +9,7 @@ public class Fractions
         this.num = num;
         this.denom = denom;  
     }
-
+//i like this
     public Fractions(int num)
     {
         this.num = num;
