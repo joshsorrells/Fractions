@@ -39,6 +39,11 @@ public class Fractions
      return new Fractions(num * a.num, denom * a.denom);
         
     }   
+    
+    public Fractions recipFrac()
+    {
+      return new Fractions(denom, num);
+    }
     public String toString()
     {   
         return num + " / " + denom;   
