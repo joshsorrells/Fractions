@@ -9,7 +9,7 @@ public class Fractions
         this.num = num;
         this.denom = denom;  
     }
-//i like this
+
     public Fractions(int num)
     {
         this.num = num;
@@ -28,8 +28,21 @@ public class Fractions
      denom = other.denom; 
     }
     
+    public Fractions inverse ()
+    {
+     if(num == 0) return null;
+     return new Fractions(denom, num);   
+    }   
+    
+    public Fractions multiplyFractions(Fractions a)
+    {
+     return new Fractions(num * a.num, denom * a.denom);
+        
+    }   
     public String toString()
     {   
         return num + " / " + denom;   
-    }    
+    } 
+    
+    
 }
